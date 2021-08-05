@@ -1,0 +1,157 @@
+html,body{
+    height: 100%;
+    color: #555;
+}
+
+/* Navigation bar design.... */
+.nav-right-item li{
+    padding: 1px 8px ;
+}
+.nav-right-item li a{
+    color: whitesmoke;
+    font-size: 1rem;
+}
+span.brand{
+    color: whitesmoke;
+    font-size: 25px;
+}
+nav{
+    padding: 1px 5px;
+}
+.main-navbar{
+    padding: 0px 10px 0px 5%;
+    background: linear-gradient(to bottom, rgb(81 166 231) 0%,rgba(64,143,218,1) 45%,rgba(41,114,191,1) 100%);
+}
+i.fa-user{
+    color: whitesmoke;
+    border: whitesmoke 1px solid;
+    border-radius: 50%;
+    padding: 5px;
+}
+.dropdown-menu{
+    white-space: nowrap;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+.dropdown-menu a{
+    padding: 5px;
+}
+.searchbar{
+    position: fixed;
+    margin: 0px auto auto 200px ;
+    /* padding: 1px 0; */
+    transform:translate(-50% -50%);
+}
+.searchbar input{
+    padding-left: 2.1rem;
+}
+.searchbar .form-control-icon{
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.1rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.main-searchbar{
+    /* position: fixed; */
+    margin: 0px 0px 0px 20%;
+    padding: 0px;
+}
+.main-searchbar input{
+    width: 25vw;
+    border-radius: 5px;
+}
+
+/* Menu Bar design..... */
+.menu-bar{
+    padding: 0px 20px;
+    background: linear-gradient(to bottom, rgb(77 77 78) 0%,rgb(59, 59, 59) 45%,rgb(44, 44, 44) 100%);
+}
+.main-menubar{
+    padding: 0px 0px;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+.dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+ul.drop-right{
+    position: fixed;
+    margin-left: 125px;
+    margin-top: -50px;
+    size: 500px;
+}
+/* user image styles */
+.image-grid{
+    margin-top: 10px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+}
+.image-border{
+    padding: 3px;
+    margin: 3px;
+    border: 0px solid #3fb7d2;
+    display: block;
+    cursor: pointer;
+}
+.image-layout{
+    background: transparent;
+    text-align: center;
+    display: block;
+}
+.supplier-image img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    line-height: 95px;
+}
+.border{
+    padding: 5px 5px;
+    margin: 5px 5px;
+}
+
+/* Styling for 760px screen size */
+
+@media (max-width:760px){
+    li.icon-settings{
+        position: fixed;
+        display: block;
+        margin-left: 89%;
+    }
+    li.icon-bell{
+        position: fixed;
+        display: block;
+        margin-left: 85%;
+    }
+}
+
+@media only screen and(min-width:780px) {
+    body{
+        box-sizing: border-box;
+        font-size: 5px;
+    }
+    .nav-right-item li a{
+        font-size: 8px;
+    }
+    /* li.icon-settings{
+        position: fixed;
+        display: block;
+        margin-left: 89%;
+    }
+    li.icon-bell{
+        position: fixed;
+        display: block;
+        margin-left: 85%;
+    } */
+}

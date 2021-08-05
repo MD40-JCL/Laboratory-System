@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\.."
+		},
+		{
+			"path": "..\\..\\..\\jclcharcoal"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Laboratory-System"
+	}
+}
