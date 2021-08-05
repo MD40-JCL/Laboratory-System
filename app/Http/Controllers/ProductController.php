@@ -9,7 +9,7 @@ class ProductController extends Controller
 {
     public function index()
     {
-        return view("product.inprogress.index-2");
+        return view("product.inprogress.index");
     }
 
     public function create()

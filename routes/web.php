@@ -22,7 +22,7 @@ Auth::routes();
 Route::resource('home','HomeController');
 Route::resource('dashboard','DashboardController');
 Route::resource('dailytask','DailyTaskController');
-Route::resource('product','ProductController');
+// Route::resource('product','ProductController');
 Route::resource('sop','SopController');
 Route::resource('method','MethodController');
 Route::resource('specification','SpecificationController');

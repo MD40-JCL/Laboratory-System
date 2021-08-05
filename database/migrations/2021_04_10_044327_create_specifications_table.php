@@ -15,6 +15,7 @@ class CreateSpecificationsTable extends Migration
     {
         Schema::create('specifications', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('specNumber')->unique();
             $table->timestamps();
         });
     }

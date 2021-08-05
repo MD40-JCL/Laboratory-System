@@ -27,7 +27,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/dashboard';
 
     /**
      * Create a new controller instance.
@@ -47,13 +47,18 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
+        // return Validator::make($data, [
+        //     'fname' => 'required|string|max:255',
+        //     'lname' => 'required|string|max:255',
+        //     'epf' => 'required|integer|max:255|unique:users',
+        //     'department' => 'required|string|max:255',
+        //     'catagory' => 'required|string|max:255',
+        //     'user_type' => 'required|string|max:255',
+        //     'email' => 'required|string|email|max:255|unique:users',
+        //     'password' => 'required|string|min:6|confirmed',
+        // ]);
         return Validator::make($data, [
-            'fname' => 'required|string|max:255',
-            'lname' => 'required|string|max:255',
-            'epf' => 'required|integer|max:255|unique:users',
-            'department' => 'required|string|max:255',
-            'catagory' => 'required|string|max:255',
-            'user_type' => 'required|string|max:255',
+            'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
         ]);
@@ -67,13 +72,18 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        // return User::create([
+        //     'fname' => $data['fname'],
+        //     'lname' => $data['lname'],
+        //     'epf' => $data['epf'],
+        //     'department' => $data['department'],
+        //     'catagory' => $data['catagory'],
+        //     'user_type' => $data['user_type'],
+        //     'email' => $data['email'],
+        //     'password' => bcrypt($data['password']),
+        // ]);
         return User::create([
-            'fname' => $data['fname'],
-            'lname' => $data['lname'],
-            'epf' => $data['epf'],
-            'department' => $data['department'],
-            'catagory' => $data['catagory'],
-            'user_type' => $data['user_type'],
+            'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);

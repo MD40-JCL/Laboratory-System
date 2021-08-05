@@ -19,7 +19,7 @@ class SpecificationController extends Controller
 
     public function store(Request $request)
     {
-        //
+        
     }
 
     public function show(Specification $specification)

@@ -9,7 +9,7 @@ class AddNewSampleController extends Controller
 {
     public function index()
     {
-        return view('sample.sample_list.index');
+        return view('sample.addNewSample.index');
     }
 
     public function create()

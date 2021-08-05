@@ -84,7 +84,7 @@
                 <div class="collapsenavbar-collapse menu-bar navbar-dark bg-dark navList">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Dashboard</a>
+                            <a class="nav-link" href="{{url('/dashboard')}}">Dashboard</a>
                         </li>
                         <div class="vl"></div>
                         <li class="nav-item dropdown">
@@ -103,7 +103,7 @@
                             <a href="#" class="nav-link" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>Products<span class="caret"></span></a>
                             <ul class="dropdown-menu dropdown-menu-left bg-dark">
                                 <!-- <li class="nav-item"><a class="nav-link" href="#">Product List</a></li> -->
-                                <li class="nav-item"><a class="nav-link" href="{{url('/inprogress')}}">In Progress Productions</a></li>
+                                <!-- <li class="nav-item"><a class="nav-link" href="{{url('/inprogress')}}">In Progress Productions</a></li> -->
                                 <li class="nav-item"><a class="nav-link" href="{{url('/product')}}">Productions</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#">Add New Product</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#">Finished Products</a></li>

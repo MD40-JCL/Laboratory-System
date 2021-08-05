@@ -25,7 +25,7 @@
                             <th>Product Plants</th>
                             <th>No of produced bags</th>
                             <th>No of Approvable bags</th>
-                            <th>Action</th>
+                            <th>Action1231531</th>
                         </tr>
                     </thead>
                     <tbody>
